@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conquistas</title>
+    <link rel="Stylesheet" href="/Trabalho/djob.css">
+    <Style>
+        ul{
+        display:contents;
+        list-style:disc;
+         text-align: justify;
+               margin: 0 ;
+     
+    }
+    li{
+        margin:0;
+    }
+    .grid-item {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 4px 4px 10px gray ;
+        transition: transform 0.3s;
+        list-style: disc;
+        
+    }
+    .ph,nav{
+        list-style: none;
+        margin: 0;
+    }
+   
+    </Style>
+</head>
+<body>
+    <header>
+       
+        <nav >
+            <div>
+            <ul>
+               
+                <li class="ph"> <a href="http://localhost:5500/Trabalho/index.html" >Página Principal</a></li>
+          
+               
+            </ul>
+        </div>
+        </nav>
+    
+       
+    </header>
+    <main>
+        <section class="grid-container">
+            <article class="grid-item">
+                <h2>Conquistas</h2><br>
+                <p>Ao longo da nossa trajetória, alcançamos diversas conquistas que refletem nosso compromisso com a inovação e a excelência:</p><br>
+                <ul Style=" margin: 0;">
+                   <li><b> Plataforma de Apoio à Decisão: </b>Desenvolvemos um sistema inteligente que permite às empresas analisarem dados complexos e tomarem decisões mais informadas. </li>
+                    <li><b>Parcerias Estratégicas:</b> Firmamos colaborações com startups, universidades e grandes empresas de tecnologia para impulsionar a inovação no setor de análise de dados.  </li>
+                    <li><b> Reconhecimento Internacional:</b> Expandimos nossa atuação para diversos mercados, consolidando nossa presença em diferentes setores da economia global.  </li>
+                    <li><b>Premiações e Reconhecimento:</b> Fomos reconhecidos como uma das startups mais inovadoras no segmento de inteligência de negócios e análise preditiva.  </li>
+                    <li><b>Impacto Empresarial:</b> Já auxiliamos mais de 500 empresas a aprimorarem sua eficiência operacional, reduzirem custos e aumentarem a rentabilidade por meio de estratégias baseadas em dados.  </li>
+                    
+                </ul><br>
+                <p>Nosso crescimento é fruto do nosso compromisso contínuo com a inovação, o atendimento personalizado e a busca por soluções cada vez mais eficazes.  </p>
+            </article>
+                    
+        </section>
+      
+    </main> 
+    <div>
+        <button id="modo-escuro">Mudar Tema</button><br></div>
+        <script>
+            const botaoModoEscuro = document.getElementById('modo-escuro');
+            botaoModoEscuro.addEventListener('click', () => {
+                document.body.classList.toggle('modo-escuro');
+            });
+        </script>
+</body>
+</html>

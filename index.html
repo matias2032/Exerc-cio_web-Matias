@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="/Trabalho/djob.css">
+    <style>
+        
+        
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="http://localhost:5500/Trabalho/missão.html">Missão</a></li>
+                <li><a href="http://localhost:5500/Trabalho/conquistas.html">Conquistas</a></li>
+                <li><a href="http://localhost:5500/Trabalho/contactos.html">Ajuda & Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="grid-container">
+            <article class="grid-item">
+                <h2>Acerca de Nós</h2><br>
+                <p>A <b>MT Choices</b> surgiu da necessidade crescente de tornar a tomada de decisões mais estratégica e baseada em dados. </p>
+                <p class="extra-conteudo" style="display: none;">Num mundo cada vez mais digital e dinâmico, percebemos que muitas empresas e profissionais enfrentam desafios ao interpretar informações complexas e utilizá-las para impulsionar seus negócios. Foi assim que decidimos criar uma solução acessível, prática e altamente eficaz para transformar dados em decisões inteligentes.  
+
+                    Nossa equipe é formada por especialistas em diversas áreas, como tecnologia, estatística, inteligência artificial, marketing e gestão empresarial. Trabalhamos de forma colaborativa para desenvolver soluções inovadoras que auxiliam empresas a atingirem seus objetivos com maior precisão e segurança.  
+                    
+                    Acreditamos que cada decisão pode ser uma oportunidade de crescimento e, por isso, oferecemos suporte estratégico para que nossos clientes possam escolher o melhor caminho com confiança. Nossa abordagem combina tecnologia de ponta com um atendimento personalizado, garantindo que cada solução seja adaptada às necessidades específicas de cada negócio.  
+                    </p><br>
+                    
+                <button class="ler-mais">Ler mais</button>
+            </article>
+            <article class="grid-item">
+                <h2>Visão</h2><br>
+                <p>Queremos ser referência global em soluções inteligentes para a tomada de decisões, permitindo que empresas de todos os tamanhos tenham acesso a ferramentas analíticas sofisticadas sem complexidade. </p>
+                <p class="extra-conteudo" style="display: none;">Nosso objetivo é criar um ecossistema onde a análise de dados seja não apenas um diferencial competitivo, mas uma prática essencial para o sucesso organizacional.  
+
+                    Acreditamos que o futuro dos negócios depende de decisões bem embasadas, e queremos estar na vanguarda dessa transformação, fornecendo tecnologia, conhecimento e suporte para ajudar empresas a prosperarem. Nossa visão é construir um mundo onde todas as escolhas sejam estratégicas e orientadas por insights concretos, reduzindo riscos e maximizando oportunidades de crescimento.  
+                    
+                    Nos próximos anos, planejamos expandir nosso impacto, desenvolvendo novas soluções e ampliando nossa atuação para mercados emergentes, promovendo a democratização da análise de dados e o uso da inteligência artificial na tomada de decisões empresariais.  
+                    </p><br>
+                <button class="ler-mais">Ler mais</button>
+            </article>
+            <article class="grid-item">
+                <h2>Objetivos</h2><br>
+                <p>Para alcançar nossa visão e continuar inovando no setor, estabelecemos objetivos estratégicos que guiam nosso crescimento e impacto no mercado:  </p><br>
+                <ul class="extra-conteudo" style="display: none; margin:0; text-align: justify;list-style: circle;">
+                    <li><b>Expansão do Portfólio:</b> Desenvolver novas soluções tecnológicas para atender a diferentes setores da economia, como saúde, educação, varejo e indústria.  </li>
+                    <li><b>Capacitação Profissional:</b> Criar programas de formação e certificação para líderes e gestores aprimorarem suas habilidades analíticas e tomarem decisões mais assertivas.  </li>
+                    <li><b>Parcerias Estratégicas:</b>Estabelecer colaborações com empresas de tecnologia, universidades e centros de pesquisa para impulsionar o desenvolvimento de novas ferramentas de inteligência de negócios.  </li>
+                    <li><b>Inovação em IA:</b>Desenvolver modelos de inteligência artificial capazes de prever tendências de mercado, otimizar processos empresariais e fornecer insights personalizados para cada cliente.</li>
+                    <li><b>Expansão Global:</b>Ampliar nossa atuação internacionalmente, levando nossas soluções para empresas em diferentes países e adaptando nossos serviços às necessidades regionais.  </li>
+                    <li><b>Reconhecimento no Mercado:</b>Ser reconhecida como uma das Top 10 empresas de tecnologia para apoio à decisão nos próximos cinco anos, consolidando nossa marca como líder no setor. </li>
+                </ul><br>
+                <button class="ler-mais">Ler mais</button>
+            </article>
+        </section>
+    </main> 
+    <div id="botão">
+    <button id="modo-escuro" >Mudar Tema</button></div>
+   
+    <script>
+        document.querySelectorAll('.ler-mais').forEach(botao => {
+            botao.addEventListener('click', () => {
+                const artigo = botao.parentElement;
+                const extraConteudo = artigo.querySelector('.extra-conteudo');
+                artigo.classList.toggle('expandido');
+                if (extraConteudo.style.display === 'none') {
+                    extraConteudo.style.display = 'block';
+                    botao.textContent = 'Ler menos';
+                } else {
+                    extraConteudo.style.display = 'none';
+                    botao.textContent = 'Ler mais';
+                }
+            });
+        });
+        
+        document.getElementById('modo-escuro').addEventListener('click', () => {
+            document.body.classList.toggle('modo-escuro');
+        });
+    </script>
+</body>
+</html>
